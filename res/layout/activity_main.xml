@@ -5,10 +5,37 @@
     tools:context=".MainActivity" >
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/prompt_input_curracy"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world" />
-
+        android:layout_marginTop="10dip"
+        android:gravity="left"
+        android:text="@string/prompt_input_curracy" />
+    
+    <EditText
+        android:id="@+id/curracy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prompt_input_curracy"
+        android:hint="@string/prompt_input_curracy"
+        android:inputType="number"
+        />
+    
+    <TextView
+        android:id="@+id/prompt_input_decimal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="left"
+        android:layout_below="@+id/curracy"
+        android:text="@string/prompt_input_decimal" />
+    
+    <EditText
+        android:id="@+id/decimal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prompt_input_decimal"
+        android:hint="@string/prompt_input_decimal"
+        android:inputType="number"
+        />
 </RelativeLayout>
